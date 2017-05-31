@@ -1,0 +1,21 @@
+# Aat subject information
+type AatSubject {
+  # The unique id of the aat subject
+  id: Int!
+
+  # The id of the aat subject as it is in the getty database
+  aatId: Int
+
+  # The preferred term of the aat subject
+  preferredTerm: String!
+
+  # The id of the parent subject
+  parentId: Int
+
+  # The facet type of this subject record
+  facetType: String!
+}
+
+type Query {
+    stuffById(id: Int!): Int!
+}
